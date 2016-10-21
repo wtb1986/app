@@ -1,0 +1,536 @@
+<!DOCTYPE HTML>
+<head>
+
+</head>
+
+<body>
+
+<ons-navigator >
+    <ons-page modifier="full_bg" ng-controller="HomeController" ng-device-backbutton="lock">
+  <ons-toolbar style="background:#2ea7e0" >
+    <div class="left">
+        <ons-toolbar-button onclick="app.slidingMenu.setMainPage('main.html', {closeMenu: true})">
+            <ons-icon icon="ion-arrow-left-c" style="color: #ffffff"></ons-icon>
+        </ons-toolbar-button>        
+    </div>
+    <div class="center" style="font-size:20px;color:white;">wifi熱點地圖</div>
+  </ons-toolbar>
+
+
+        <div class="h5" style="position:absolute; top:18px; left:190px;" modifier="tappable">
+        <a href="#openModal">大台北</a>
+        </div>
+        <div id="openModal" class="modalDialog">
+            <div >
+            	<a href="#close" ng-click="app.slidingMenu.setMainPage('map_fake.html')" title="Close" class="close">X</a>
+        		<div align="center">大台北</div>
+                  <div align="center">
+                            商圈與量販店
+                            <table cellspacing="0" cellpadding="0" style="font-size:14px;font-family:微軟正黑體;">
+                              <col width="100">
+                              <col width="190">
+                              <tr>
+                                <td bgcolor="#d0dde2" align="center">家樂福桂林店</td>
+                                <td>萬華區桂林路1號</td>
+                              </tr>
+                              <tr>
+                                <td bgcolor="#d0dde2" align="center">家樂福重慶店</td>
+                                <td>大同區重慶北路二段171號</td>
+                              </tr>
+                              <tr>
+                                <td bgcolor="#d0dde2" align="center">家樂福大直店</td>
+                                <td>中山區樂群三路218號&nbsp;</td>
+                              </tr>
+                              <tr>
+                                <td bgcolor="#d0dde2" align="center">美麗華百樂園</td>
+                                <td>中山區敬業三路20號</td>
+                              </tr>
+                                <tr>
+                                <td bgcolor="#d0dde2" align="center">家樂福樹林店</td>
+                                <td>新北市樹林區大安路118號</td>
+                              </tr>
+                              <tr>
+                                <td bgcolor="#d0dde2" align="center">京站服務中心</td>
+                                <td>中正區北平西路3號1樓</td>
+                              </tr>
+                              <tr>
+                                <td bgcolor="#d0dde2" align="center">台北地下街</td>
+                                <td>中正區市民大道一段100號</td>
+                              </tr>
+                              <tr>
+                                <td bgcolor="#d0dde2" align="center">台北後火車站</td>
+                                <td>大同區太原路54號</td>
+                              </tr>
+                              <tr>
+                                <td bgcolor="#d0dde2" align="center">華陰街商圈</td>
+                                <td>大同區華陰街</td>
+                              </tr>
+                              <tr>
+                                <td bgcolor="#d0dde2" align="center">寧夏夜市</td>
+                                <td>大同區寧夏路</td>
+                              </tr>
+                            </table>
+                            西雅圖咖啡
+                            <table cellspacing="0" cellpadding="0" style="font-size:14px;font-family:微軟正黑體;">
+                              <col width="100">
+                              <col width="190">
+                              <tr>
+                                <td bgcolor="#d0dde2" align="center">頂溪店</td>
+                                <td>永和區永和路二段116號</td>
+                              </tr>
+                              <tr>
+                                <td bgcolor="#d0dde2" align="center">台大店</td>
+                                <td>大安區新生南路三段88號</td>
+                              </tr>
+                              <tr>
+                                <td bgcolor="#d0dde2" align="center">新遠企店</td>
+                                <td>大安區敦化南路二段203號</td>
+                              </tr>
+                              <tr>
+                                <td bgcolor="#d0dde2" align="center">基隆店</td>
+                                <td>信義區基隆路二段113之1號</td>
+                              </tr>
+                              <tr>
+                                <td bgcolor="#d0dde2" align="center">世貿店</td>
+                                <td>信義區信義路五段6號</td>
+                              </tr>
+                              <tr>
+                                <td bgcolor="#d0dde2" align="center">仁愛光復店</td>
+                                <td>大安區仁愛路四段449號</td>
+                              </tr>
+                              <tr>
+                                <td bgcolor="#d0dde2" align="center">忠孝延吉店</td>
+                                <td>大安區忠孝東路四段250號</td>
+                              </tr>
+                              <tr>
+                                <td bgcolor="#d0dde2" align="center">榮星紅樓店</td>
+                                <td>中山區民權東路三段3號</td>
+                              </tr>
+                              <tr>
+                                <td bgcolor="#d0dde2" align="center">內湖禮客店</td>
+                                <td>內湖區民善街205號</td>
+                              </tr>
+                              <tr>
+                                <td bgcolor="#d0dde2" align="center">西湖店</td>
+                                <td>內湖區內湖路一段242號</td>
+                              </tr>
+                            </table>
+                  </div>
+                
+                
+        	</div>
+        </div>
+
+        <div class="h5" style="position:absolute; top:50px; left:150px;" modifier="tappable">
+        <a href="#openModal2">桃園</a>
+        </div>
+        <div id="openModal2" class="modalDialog">
+            <div>
+                <a href="#close" ng-click="app.slidingMenu.setMainPage('map_fake.html')" title="Close" class="close">X</a>
+        		<div align="center">桃園</div>
+                   <div align="center">
+                        <table cellspacing="0" cellpadding="0" style="font-size:14px;font-family:微軟正黑體;">
+                          <col width="100">
+                          <col width="190">
+                              <tr>
+                                <td bgcolor="#d0dde2" align="center">家樂福中原店</td>
+                                <td>中壢區中華路二段501號</td>
+                              </tr>
+                              <tr>
+                                <td bgcolor="#d0dde2" align="center">家樂福內壢店</td>
+                                <td>中壢區中華路一段450號</td>
+                              </tr>
+                              <tr>
+                                <td bgcolor="#d0dde2" align="center">家樂福中壢店</td>
+                                <td>中壢區中山東路二段510號</td>
+                              </tr>
+                              <tr>
+                                <td bgcolor="#d0dde2" align="center">家樂福經國店</td>
+                                <td>桃園區經國路369號</td>
+                              </tr>
+                            </table>
+                            西雅圖咖啡
+                        <table cellspacing="0" cellpadding="0" style="font-size:14px;font-family:微軟正黑體;">
+                          <col width="100">
+                          <col width="190">
+                              <tr>
+                                <td bgcolor="#d0dde2" align="center">中壢元化店</td>
+                                <td>中壢區元化路317號</td>
+                              </tr>
+                        </table>
+                    </div>
+        	</div>
+        </div>
+
+        
+        <div class="h5" style="position:absolute; top:90px; left:120px;" modifier="tappable">
+        <a href="#openModal3">新竹</a>
+        </div>
+        <div id="openModal3" class="modalDialog">
+            <div>
+            	<a href="#close" ng-click="app.slidingMenu.setMainPage('map_fake.html')" title="Close" class="close">X</a>
+        		<div align="center">新竹</div>
+                  <div align="center">
+                    <table cellspacing="0" cellpadding="0" style="font-size:14px;font-family:微軟正黑體;">
+                      <col width="100">
+                      <col width="190">
+                          <tr>
+                            <td bgcolor="#d0dde2" align="center">漢堡王竹科店</td>
+                            <td>東區工業東二路1號</td>
+                          </tr>
+                    </table>        
+                </div>    
+        	</div>
+        </div>
+        
+        <div class="h5" style="position:absolute; top:160px; left:70px;" modifier="tappable">
+        <a href="#openModal4">台中</a>
+        </div>
+        <div id="openModal4" class="modalDialog">
+            <div>
+                <a href="#close" ng-click="app.slidingMenu.setMainPage('map_fake.html')" title="Close" class="close">X</a>
+        		<div align="center">台中</div>
+                 <div align="center">
+                  量販店
+                    <table cellspacing="0" cellpadding="0" style="font-size:14px;font-family:微軟正黑體;">
+                      <col width="100">
+                      <col width="190">
+                          <tr>
+                            <td bgcolor="#d0dde2" align="center">家樂福中清店</td>
+                            <td>西屯區中清路三段436號</td>
+                          </tr>
+                          <tr>
+                            <td bgcolor="#d0dde2" align="center">家樂福青海店</td>
+                            <td>西屯區青海路二段207-18號</td>
+                          </tr>
+                          <tr>
+                            <td bgcolor="#d0dde2" align="center">家樂福文心店</td>
+                            <td>南屯區文心路一段521號</td>
+                          </tr>
+                          <tr>
+                            <td bgcolor="#d0dde2" align="center">家樂福崇德店</td>
+                            <td>北區崇德路一段635號</td>
+                          </tr>
+                          <tr>
+                            <td bgcolor="#d0dde2" align="center">家樂福太平店</td>
+                            <td>太平區中平七街70號</td>
+                          </tr>
+                        </table>
+                        西雅圖咖啡
+                    <table cellspacing="0" cellpadding="0" style="font-size:14px;font-family:微軟正黑體;">
+                      <col width="100">
+                      <col width="190">
+                          <tr>
+                            <td bgcolor="#d0dde2" align="center">沙鹿店</td>
+                            <td>梧棲區台灣大道八段699號</td>
+                          </tr>
+                    </table>
+                </div>    
+        	</div>
+        </div>
+        
+        <div class="h5" style="position:absolute; top:320px; left:30px;" modifier="tappable">
+        <a href="#openModal5">台南</a>
+        </div>
+        <div id="openModal5" class="modalDialog">
+            <div>
+                <a href="#close" ng-click="app.slidingMenu.setMainPage('map_fake.html')" title="Close" class="close">X</a>
+            	<div align="center">台南</div>
+                 <div align="center">
+                  量販店
+                    <table cellspacing="0" cellpadding="0" style="font-size:14px;font-family:微軟正黑體;">
+                      <col width="100">
+                      <col width="190">
+                          <tr>
+                            <td bgcolor="#d0dde2" align="center">家樂福中正店</td>
+                            <td>永康區中正南路358號</td>
+                          </tr>
+                          <tr>
+                            <td bgcolor="#d0dde2" align="center">家樂福中華店</td>
+                            <td>永康區中華二路350號</td>
+                          </tr>
+                          <tr>
+                            <td bgcolor="#d0dde2" align="center">家樂福文心店</td>
+                            <td>南屯區文心路一段521號</td>
+                          </tr>
+                          <tr>
+                            <td bgcolor="#d0dde2" align="center">家樂福安平店</td>
+                            <td>中西區中華西路二段16號</td>
+                          </tr>
+                          <tr>
+                            <td bgcolor="#d0dde2" align="center">家樂福仁德店</td>
+                            <td>仁德區中山路717號</td>
+                          </tr>
+                        </table>
+                        西雅圖咖啡
+                    <table cellspacing="0" cellpadding="0" style="font-size:14px;font-family:微軟正黑體;">
+                      <col width="100">
+                      <col width="190">
+                          <tr>
+                            <td bgcolor="#d0dde2" align="center">台南新天地店</td>
+                            <td>中西區西門路一段658號</td>
+                          </tr>
+                    </table>
+                </div>    
+        	</div>
+        </div>
+        
+        <div class="h5" style="position:absolute; top:370px; left:30px;" modifier="tappable">
+        <a href="#openModal6">高雄</a>
+        </div>
+        <div id="openModal6" class="modalDialog">
+            <div>
+                <a href="#close" ng-click="app.slidingMenu.setMainPage('map_fake.html')" title="Close" class="close" aria-label="Close reveal">X</a>
+                <div align="center">高雄</div>
+                <div align="center">
+                  量販店
+                    <table cellspacing="0" cellpadding="0" style="font-size:14px;font-family:微軟正黑體;">
+                      <col width="100">
+                      <col width="190">
+                          <tr>
+                            <td bgcolor="#d0dde2" align="center">家樂福鼎山店</td>
+                            <td>三民區大順二路849號</td>
+                          </tr>
+                          <tr>
+                            <td bgcolor="#d0dde2" align="center">家樂福愛河店</td>
+                            <td>三民區河東路356號</td>
+                          </tr>
+                          <tr>
+                            <td bgcolor="#d0dde2" align="center">家樂福鳳山店</td>
+                            <td>鳳山區中山西路236號</td>
+                          </tr>
+                          <tr>
+                            <td bgcolor="#d0dde2" align="center">家樂福光華店</td>
+                            <td>前鎮區光華二路157號</td>
+                          </tr>
+                          <tr>
+                            <td bgcolor="#d0dde2" align="center">家樂福成功店</td>
+                            <td>前鎮區中華五路1111號</td>
+                          </tr>
+                          <tr>
+                            <td bgcolor="#d0dde2" align="center">家樂福五甲店</td>
+                            <td>鳳山區林森路291號</td>
+                          </tr>
+                        </table>
+                </div>  
+        	</div>
+        </div>
+        
+        <div class="h5" style="position:absolute; top:340px; left:190px;" modifier="tappable">
+        <a href="#openModal7">台東</a>
+        </div>
+        <div id="openModal7" class="modalDialog">
+            <div>
+                <a href="#close" ng-click="app.slidingMenu.setMainPage('map_fake.html')" title="Close" class="close" aria-label="Close reveal">X</a>
+                <div align="center">台東</div>
+                              <div align="center">
+                  量販店
+                    <table cellspacing="0" cellpadding="0" style="font-size:14px;font-family:微軟正黑體;">
+                      <col width="100">
+                      <col width="190">
+                          <tr>
+                            <td bgcolor="#d0dde2" align="center">家樂福台東店</td>
+                            <td>台東市正氣路300之1號</td>
+                          </tr>
+
+                        </table>
+                </div> 
+            </div>
+        </div>
+        
+        
+   </ons-page>
+</ons-navigator>
+
+</body>
+
+
+<style>
+.page--full_bg__background {
+    background: url('images/map.png');
+    background-size:cover;
+    width: 100%;
+    height: 100%;
+}
+
+.page-full_bg > .navigation-bar {
+    background-color: transparent; 
+}
+
+.button {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  background-clip: padding-box;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  border: none;
+  line-height: normal;
+  font-family: 'Helvetica Neue', Helvetica, Arial, '微軟正黑體', sans-serif;
+  font-weight: BOLD;
+  font-size: 17px;
+  cursor: default;
+  white-space: nowrap;
+  overflow: hidden;
+  height: auto;
+  text-decoration: none;
+  padding: 4px 10px;
+  font-size: 17px;
+  line-height: 32px;
+  letter-spacing: 0;
+  color: #ffffff;
+  vertical-align: middle;
+  background-color: #FFFFFF;
+  border: 1px solid currentColor;
+  border-radius: 30px;
+  transition: none;
+}
+.button:hover {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+.button:active {
+  background-color: #FFFFFF;
+  transition: none;
+  opacity: 0.2;
+}
+.button:focus {
+  outline: 0;
+}
+.button:disabled,
+.button[disabled] {
+  opacity: 0.3;
+  cursor: default;
+  pointer-events: none;
+}
+.button--light {
+  background-color: #FFFFFF;
+  color: rgba(0,0,0,0.4);
+  border: 1px solid rgba(0,0,0,0.2);
+}
+.button--light:active {
+  background-color: #FFFFFF;
+  color: rgba(0,0,0,0.4);
+  border: 1px solid rgba(0,0,0,0.2);
+  opacity: 1;
+}
+
+.modalDialog {
+    	position: fixed;
+		font-family: Arial, Helvetica, 微軟正黑體;
+		top: 10px;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background:rgba(0,0,0,0.6);
+		z-index: 99999;
+		opacity:0;
+		-webkit-transition: opacity 400ms ease-in;
+		-moz-transition: opacity 400ms ease-in;
+		transition: opacity 400ms ease-in;
+		pointer-events: none;
+	}
+
+	.modalDialog:target {
+		opacity:1;
+		pointer-events: auto;
+	}
+
+	.modalDialog > div {
+		width: 90%;
+        position: relative;
+        top: 20px;
+		margin: 10% auto;
+		padding: 5px 0px 20px 0px;
+		border-radius: 0px;
+		background: #ffffff;
+		background: -moz-linear-gradient(#fff, #fff);
+		background: -webkit-linear-gradient(#fff, #fff);
+		background: -o-linear-gradient(#fff, #fff);
+	}
+
+	.close {
+		background: #232323;
+		color: #FFFFFF;
+		line-height: 30px;
+		position: absolute;
+		right: -12px;
+		text-align: center;
+		top: -8px;
+		width: 30px;
+		text-decoration: none;
+		font-weight: bold;
+		-webkit-border-radius: 12px;
+		-moz-border-radius: 12px;
+		border-radius: 20px;
+		-moz-box-shadow: 1px 1px 3px #000;
+		-webkit-box-shadow: 1px 1px 3px #000;
+		box-shadow: 1px 1px 3px #000;
+	}
+
+	.close:hover { background: #00d9ff; }
+   
+    .h5 {
+      position: relative;
+      display: inline-block;
+      font-weight:bold;
+      vertical-align: top;
+      box-sizing: border-box;
+      background-clip: padding-box;
+      padding: 0;
+      margin: 0;
+      line-height: normal;
+      font-family: 'Helvetica Neue', Helvetica, Arial, '微軟正黑體', sans-serif;
+      font-size: 17px;
+      cursor: default;
+      white-space: nowrap;
+      overflow: hidden;
+      height: auto;
+      padding: 4px 10px;
+      line-height: 32px;
+      letter-spacing: 0;
+      color: #ffffff;
+      vertical-align: middle;
+      background-color: #FFFFFF;
+      border: 1px solid currentColor;
+      border-radius: 30px;
+      transition: none;
+      text-decoration:none;
+      box-shadow:0px 0px 6px rgba(20%,20%,40%,0.5);
+    }
+    
+     .align {
+      background-clip: padding-box;
+      padding: 0;
+      margin: 0;
+      line-height: normal;
+      font-family: 'Helvetica Neue', Helvetica, Arial, '微軟正黑體', sans-serif;
+      font-size: 16px;
+      cursor: default;
+      white-space: nowrap;
+      line-height: 32px;
+      letter-spacing: 0;
+      color: #ffffff;
+      vertical-align: middle;
+      text-align: center;
+      background-color: #FFFFFF;
+      text-decoration:none;
+      box-shadow:0px 0px 6px rgba(20%,20%,40%,0.5);
+    }
+
+.center{
+    padding-left :90px; 
+    }  
+.table, th, td {
+   border: 1px solid black;
+}    
+    
+    
+</style>
+
+</html>

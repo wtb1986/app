@@ -1,0 +1,61 @@
+<ons-page sliding-menu-ignore="true">
+        
+  <ons-toolbar style="background: #5FA4D0;" >
+    <div class="left">
+        <ons-toolbar-button onclick="app.slidingMenu.setMainPage('main.html', {closeMenu: true})">
+            <ons-icon icon="ion-arrow-left-c" style="color: #ffffff"></ons-icon>
+        </ons-toolbar-button>        
+    </div>
+    <div class="center" style="font-size:20px;color:white;">競賽投票</div>
+  </ons-toolbar>
+
+    <br />
+        <br>
+        <div class="card">投票辦法</div>
+        <br>
+        <div class="card-desc">
+            1. 參賽者可邀請朋友下載App後進行投票<br />
+            2. 每人每天最多可投一票 <br />
+            3. 投票App需使用安卓手機(Android)安裝 <br />
+            4. 投票時也可至「台北後站商圈批發商圈」<br />
+               &nbsp&nbsp&nbsp&nbsp的FB粉絲頁進行投票<br />
+        </div>
+
+
+        <br>
+        <br>
+
+        <button class="button button--large" style="width:100%" modifier="dark" onclick="app.slidingMenu.setMainPage('aboutgame_2.html', {closeMenu: true})" style="background-color:#5fa4d0;width:80%;">參賽隊伍介紹與投票</button>
+        <br><br>
+</ons-page>
+
+
+
+<style>
+    .card {
+     text-align: center;
+     font-family: 微軟正黑體;
+     font-weight: bold;
+     font-size: 18px;
+    }
+    .card-desc {
+     text-align: left;
+     font-family: 微軟正黑體;
+     font-size:16px;
+     width: 92%;
+     line-height: 30px;
+     position:relative;
+     margin-left: 20px;
+     
+    }
+    .center{
+    padding-left :100px; 
+    }
+    .button--large{
+      width: 100%;
+      height:60px;
+    }    
+   
+    
+    
+</style>

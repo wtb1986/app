@@ -1,0 +1,69 @@
+<ons-page style="background-color: white" >
+
+    <ons-list>
+    <br>
+    <br>
+    <br>
+
+        <ons-list-item
+            modifier="tappable" class="list__item__line-height"
+            onclick="app.slidingMenu.setMainPage('main.html', {closeMenu: true})">
+            <i class="ion-home" style="color: #494949"></i>
+            &nbsp;&nbsp;首頁
+        </ons-list-item>
+
+        <ons-list-item
+            modifier="tappable" class="list__item__line-height"
+            onclick="app.slidingMenu.setMainPage('map.html', {closeMenu: true})">
+            <i class="ion-map" style="color: #494949"></i>
+            &nbsp; 參賽店家
+        </ons-list-item>
+        
+        <ons-list-item
+            modifier="tappable" class="list__item__line-height"
+            onclick="app.slidingMenu.setMainPage('phone.html', {closeMenu: true})">
+            <i class="ion-ios-telephone" style="color: #494949"></i>
+            &nbsp; 服務電話
+        </ons-list-item>
+        
+       <ons-list-item
+            modifier="tappable" class="list__item__line-height"
+            onclick="app.slidingMenu.setMainPage('wifi.html', {closeMenu: true})">
+            <i class="ion-location" style="color: #494949"></i>
+            &nbsp;&nbsp; wifi熱點地圖
+        </ons-list-item>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        
+        <ons-list-item
+            modifier="tappable" class="list__item__line-height"
+            ng-click="logout()" ng-controller="LogoutController">
+            <i class="ion-reply" style="color: #494949" ></i>
+            &nbsp; 登出系統
+        </ons-list-item>
+
+    </ons-list>
+
+
+</ons-page>
+<style>    
+.ion-location{
+ font-size: 28px;    
+    }
+
+.ion-ios-telephone{
+ font-size: 28px;    
+    }
+    
+.ion-home{
+ font-size: 26px;    
+    }
+    
+.ion-reply{
+ font-size: 25px;    
+    }
+    
+.ion-map{
+ font-size: 23px;    
+    }
+</style>
+

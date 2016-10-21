@@ -1,0 +1,87 @@
+<ons-page ng-controller="GalleryController" sliding-menu-ignore="true" modifier="full_bg" ng-device-backbutton="lock">
+    <ons-toolbar style="background:#929292" >
+        <div class="left">
+            <ons-toolbar-button ng-click="app.slidingMenu.toggleMenu()"><ons-icon icon="bars" style="color: #ffffff"></ons-icon></ons-toolbar-button>
+        </div>
+    <div class="center" style="font-size:20px;color:white;text-align:center">&nbsp&nbsp2016後站商圈 批客聰明購競賽</div>
+    </ons-toolbar>
+    
+    <div>
+        <img src="images/Street.PNG" style="width:100%;" />
+    </div>
+            
+    <ons-row style="margin-top:0px; text-align: center;">
+        <ons-col>
+            <button class="button button--index" modifier="light" onclick="app.slidingMenu.setMainPage('aboutgame_1.html', {closeMenu: true})" style="background-color:#5FA4D0;width:49%;height:90px">
+                <table border="0" width="100%">
+                    <tr>
+                        <td>
+                            <div style="margin:auto; width:100% height:100%">
+                                <img src="images/main_competition.png" style="width:30px" />
+                            </div>
+                        </td>
+                        <td>競賽投票</td>
+                    </tr>
+                </table>
+            </button>
+            <button class="button button--index" modifier="dark" onclick="app.slidingMenu.setMainPage('map.html', {closeMenu: true})" style="background-color:#A9C954;width:49%;height:90px">
+                <table border="0" width="100%">
+                    <tr>
+                        <td>
+                            <div style="margin:auto; width:100% height:100%">
+                                <img src="images/main_stores.png" style="width:35px" />
+                            </div>
+                        </td>
+                        <td>參賽店家</td>
+                    </tr>
+                </table>
+            </button>
+        </ons-col>
+    </ons-row>
+    
+    <ons-row style="margin-top:3px; text-align: center;">
+        <ons-col>
+            <button class="button button--index" modifier="dark" onclick="app.slidingMenu.setMainPage('phone.html', {closeMenu: true})" style="background-color:#E97575;width:49%;height:90px">
+                <table border="0" width="100%">
+                    <tr>
+                        <td>
+                            <div style="margin:auto; width:100% height:100%">
+                                <img src="images/main_phone.png" style="width:33px" />
+                            </div>
+                        </td>
+                        <td>服務電話</td>
+                    </tr>
+                </table>
+            </button>
+            <button class="button button--index" modifier="dark" onclick="app.slidingMenu.setMainPage('index_service.html', {closeMenu: true})" style="background-color:#F5B32D;width:49%;height:90px">
+                <table border="0" width="100%" height="1px">
+                    <tr>
+                        <td>
+                            <img src="images/main_service.png" style="width:35px" />
+                        </td>
+                        <td>商圈服務</td>
+                    </tr>
+                </table>
+            </button>
+        </ons-col>
+    </ons-row>
+    
+   <!--    
+    <ons-scroller> 
+        <ul rn-carousel rn-carousel-indicator rn-carousel-control>
+            <li ng-repeat="slide in slides">
+                <img ng-src="{{slide.picture}}"/>
+            </li>
+        </ul>
+    </ons-scroller>
+    --> 
+
+</ons-page>
+
+
+
+<style>
+.page-full_bg {
+    background-color: #383838; 
+}
+</style>

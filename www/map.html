@@ -1,0 +1,33 @@
+<ons-navigator ng-controller="MapController">
+   <ons-page sliding-menu-ignore="true" ng-device-backbutton="lock">
+  <ons-toolbar style="background:#A9C954" >
+    <div class="left">
+        <ons-toolbar-button onclick="app.slidingMenu.setMainPage('main.html', {closeMenu: true})">
+            <ons-icon icon="ion-arrow-left-c" style="color: #ffffff"></ons-icon>
+        </ons-toolbar-button>        
+    </div>
+    <div class="center" style="font-size:20px;color:white;">參賽店家</div>
+  </ons-toolbar>
+
+        <div id="map_canvas"></div>
+
+        <p class="par-search" style="display:none;">
+            <input type="search" class="search-input search-input-map">
+        </p>
+
+        <p class="par-buttons" style="display:none;">
+            <ons-button  class="btn-delete" ng-click="deleteAllMarkers()">
+                清除標記點
+            </ons-button>
+            <ons-button class="btn-distance" ng-click="calculateDistance()">
+                計算距離
+            </ons-button>
+        </p>   
+    </ons-page>
+</ons-navigator>
+
+<style>
+.center{
+    padding-left :100px; 
+    }    
+</style>

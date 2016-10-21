@@ -1,0 +1,87 @@
+<ons-navigator>
+    <ons-page modifier="login_bg" ng-controller="LoginController" sliding-menu-ignore="true" ng-device-backbutton="lock">
+           <!-- ons-toolbar>
+                <div class="left">
+                    <ons-toolbar-button ng-click="app.slidingMenu.toggleMenu()"><ons-icon icon="bars"></ons-icon></ons-toolbar-button>
+                </div>
+                <div class="center">登入系統</div>
+                <!-- div class="right"><ons-toolbar-button>Close</ons-toolbar-button></div -->
+            </ons-toolbar -->
+        
+          <img src="images/login_bg.png" class="login_bg" />
+          <div class="login-form">
+            <img src="images/login_title.png" class="login_title" />
+          <br></br>
+            <input class="text-input--underbar width-half" ng-model="username" 
+                    placeholder="輸入您的電話直接登入!">
+            <input class="text-input--underbar width-half" ng-model="password"
+                    placeholder="參賽隊伍驗證碼(一般使用者免填)" type="password">
+            <br><br>
+            <ons-button class="login-button" ng-click="login()">登入</ons-button>
+            <ons-button class="login-button" ng-click="app.slidingMenu.setMainPage('home.html', {closeMenu: true})">取消</ons-button>
+            <!-- br><br>
+            <ons-button modifier="quiet" class="forgot-password">Forgot password?</ons-button <--></-->
+          </div>
+    
+    
+    
+    </ons-page>
+</ons-navigator>
+
+<style>
+.page {
+    color:#3E3A39;
+    font-family: Microsoft JhengHei;
+}
+
+.page--login_bg__background {
+    background-color: #ffffff;
+}
+
+.login_bg {
+    width:100%;
+    height: auto;
+    position: center;
+}
+        
+.login_title {
+    width: 80%;
+    height: auto;
+    position: center;
+}
+
+.login-form {
+  text-align: center;
+  width: 80%;
+  margin: 60px auto 0;
+}
+
+.input[type=email], input[type=password] {
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+  outline: none;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.text-input--underbar{
+  width: 300px;
+  font-family: 微軟正黑體;
+  font-size: 16px;  
+  text-align: center;
+  margin: auto;
+
+}
+
+.login-button {
+  width: 45%;
+  margin: 0 auto;
+}
+
+.forgot-password {
+  display: block;
+  margin: 8px auto 0 auto;
+  font-size: 14px;
+}
+</style>

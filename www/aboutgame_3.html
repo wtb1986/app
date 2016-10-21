@@ -1,0 +1,82 @@
+<ons-page ng-controller="TeamVoteController" sliding-menu-ignore="true">
+
+    <div data-ng-init="pageload_TV()" ></div>
+        
+    <ons-toolbar style="background: #5FA4D0;" >
+        <div class="left">
+            <ons-toolbar-button onclick="app.slidingMenu.setMainPage('aboutgame_2.html', {closeMenu: true})">
+            <ons-icon icon="ion-arrow-left-c" style="color: #ffffff"></ons-icon>
+            </ons-toolbar-button>        
+        </div>
+        <div class="center" style="font-size:20px;color:white;">參賽作品介紹</div>
+    </ons-toolbar>
+    
+    <div align="center" style="margin:20px">
+        {{ team_name }}<br />
+        <img src="{{ team_photoUrl }}" width="80%" />
+    </div>
+     <div class="div-position" align="center" style="font-family:Microsoft JhengHei;font-size:15px;">{{introduction}}</div>
+
+
+    <div align="center" style="margin:20px">
+        <img src="{{ product_photoUrl }}" width="80%"/>
+    </div>
+     <div  class="div-position" align="center" style="font-family:Microsoft JhengHei;font-size:15px;">作品照片</div>
+    <br>
+    <div align="center" style="margin:20px">
+    <img src="{{ product_photoUrl2 }}" width="80%"/>
+    <img src="{{ product_photoUrl3 }}" width="80%"/>
+    <img src="{{ product_photoUrl4 }}" width="80%"/>
+    </div>
+    <!--
+    <div  class="div-position" align="center" style="font-family:Microsoft JhengHei;font-size:15px;">愛心卡</div>
+
+    <br>
+    <div align="center" style="font-family:Microsoft JhengHei;font-size:15px;">這是內容說明的區塊</div>
+
+    <br>
+    <div align="center" style="margin:20px">
+    <img src="images/teama.PNG" />
+    </div>
+    <div class="div-position" align="center" style="font-family:Microsoft JhengHei;font-size:15px;">作品包裝</div>
+    -->
+    <div class="div-position" align="center" style="font-family:Microsoft JhengHei;font-size:15px;">目前得票：{{vote_qty}}</div>
+    <br>
+    <input type="button" value="投他們一票" class="button button--large" modifier="dark" width="80%" style="background-color:#a9c954;" ng-click="AddVote()">
+    <!-- button class="button button--large" modifier="dark" width="80%" style="background-color:#a9c954;" ng-clock="AddVote()">投他們一票</button -->
+    <br>
+</ons-page>
+
+<style>
+    .div-position {
+        position: relative;
+        top: -15px;
+    }
+    
+<style>
+    .card {
+     text-align: center;
+     font-family: 微軟正黑體;
+     font-weight: bold;
+     font-size: 20px;
+    }
+    .card-desc {
+     text-align: left;
+     font-family: 微軟正黑體;
+     font-size:16px;
+     width: 85%;
+     line-height: 30px;
+     padding-left: 30px;
+    }
+    .center{
+    padding-left :80px; 
+        }
+    .button button--large{
+     margin:auto;
+     display:block;
+     width: 100%;
+    }        
+    
+    
+</style>
+

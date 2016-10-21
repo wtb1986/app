@@ -1,0 +1,117 @@
+<ons-page sliding-menu-ignore="true" ng-device-backbutton="lock">
+  <ons-toolbar style="background: #E97575;" >
+    <div class="left">
+        <ons-toolbar-button onclick="app.slidingMenu.setMainPage('main.html', {closeMenu: true})">
+            <ons-icon icon="ion-arrow-left-c" style="color: #ffffff"></ons-icon>
+        </ons-toolbar-button>        
+    </div>
+    <div class="center" style="font-size:20px;color:white;">服務電話</div>
+  </ons-toolbar>
+
+ 
+
+  <ons-list>
+    <ons-list-item modifier="tappable" style="height:70px">
+      <ons-icon icon="fa-phone-square" size="30px"></ons-icon>
+      <a onclick="window.open('tel:0921766116', '_system')">撥打活動客服-吳先生 0921-766116</a>
+      <span class="list-item-action">
+
+      </span>
+    </ons-list-item>
+    
+    <ons-list-item modifier="tappable" style="height:70px">
+      <ons-icon icon="fa-phone-square" size="30px"></ons-icon>
+      <a onclick="window.open('tel:0935687384', '_system')">撥打活動客服-黃小姐 0935-687384</a>
+      <span class="list-item-action">
+      </span>
+    </ons-list-item>
+
+    <!-- 
+    <ons-list-item modifier="chevron">
+      <ons-icon icon="fa-credit-card" size="20px"></ons-icon>
+      Change Credit Card
+    </ons-list-item>
+
+    <ons-list-item modifier="chevron">
+      <ons-icon icon="fa-users" size="20px"></ons-icon>
+      See Friends
+      <span class="list-item-note">
+        <span class="notification">10</span>
+      </span>
+    </ons-list-item>
+
+    <ons-list-header>My Preference</ons-list-header>
+
+    <ons-list-item modifier="chevron">
+      <ons-icon icon="fa-film" size="20px"></ons-icon>
+      My Movie
+      <span class="list-item-note lucent">Monaca Legend</span>
+    </ons-list-item>
+
+    <ons-list-item modifier="chevron">
+      <ons-icon icon="fa-music" size="20px"></ons-icon>
+      My Music
+      <span class="list-item-note lucent">Anatoo Samba</span>
+    </ons-list-item>
+
+    <ons-list-item modifier="chevron">
+      <ons-icon icon="fa-gamepad" size="20px"></ons-icon>
+      My Game
+      <span class="list-item-note lucent">Onsen UI Bros.</span>
+    </ons-list-item>
+
+    <ons-list-header>Other</ons-list-header>
+
+    <ons-list-item modifier="chevron">
+      <ons-icon icon="fa-cog" size="20px"></ons-icon>
+      Settings
+    </ons-list-item>
+
+    <ons-list-item modifier="chevron">
+      <ons-icon icon="fa-minus-circle" size="20px"></ons-icon>
+      Delete All Preferences
+    </ons-list-item>
+    -->
+    
+  </ons-list>
+</ons-page>
+
+<style>
+ons-list-item > ons-icon {
+  margin: 20px 12px 0 10px;
+  opacity: 0.8;
+  text-align: center;
+  padding: auto;
+}
+
+.list-item-action {
+  position: absolute;
+  right: 10px;
+  top: 0px;
+  font-size: 20px;
+  opacity: 0.3;
+}
+
+.list-item-action > ons-icon {
+  margin-top: 14px;
+}
+
+.list-item-note {
+  position: absolute;
+  right: 36px;
+  top: 0px;
+  font-size: 14px;
+}
+
+.list-item-note > .notification {
+  margin-top: 12px;
+}
+
+.lucent {
+  opacity: 0.4;
+}
+.center{
+    padding-left :100px; 
+    }   
+
+</style>
